@@ -41,6 +41,8 @@
     "./package.json"
   ],
   "scripts": {
+    "build": "exit 0",
+    "test": "exit 0",
     "lint": "eslint . --ext .ts,.tsx,.js,.cjs",
     "lint:fix": "bun run lint --fix --quiet",
     "prettier": "prettier . --write"
