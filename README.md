@@ -7,7 +7,7 @@ An opinionated Eslint config used for Plaited repositories.
 Install eslint and this config:
 
 ```
-npm i -D eslint @plaited/eslint-config
+npm i -D eslint @plaited/eslint-prettier-config
 ```
 
 Now in your `.eslintrc.cjs`:
