@@ -23,11 +23,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - uses: oven-sh/setup-bun@v1
+
+      - name: Setup
+        run: bun install
+
       - name: Version
         run: |
           git config user.name "${{ github.actor }}"
           git config user.email "${{ github.actor}}@users.noreply.github.com"
           npm version ${{ github.event.inputs.version }}
+          git add .
+          git commit -m "ci: publish ${{ github.event.inputs.version }} [skip ci]"
+          git push origin HEAD:main
           gh release create ${{ github.event.inputs.version }} --generate-notes
       - name: Publish
         run: |
