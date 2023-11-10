@@ -29,3 +29,11 @@ module.exports = {
   ... // Override properties if needed
 }
 ```
+
+Recommend adding this to your `package.json` for modern Evergreen browser support
+
+```json
+{
+  "browserslist": ["> 2%"]
+}
+```

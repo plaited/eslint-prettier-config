@@ -24,8 +24,5 @@ module.exports = {
         'ts-ignore': 'allow-with-description',
       },
     ],
-  },
-  settings: {
-    'compat/compat': { browserslist: ['> 2%'] },
-  },
+  }
 }
