@@ -1,5 +1,7 @@
 # Plaited eslint prettier config presets
 
+[![Test](https://github.com/plaited/eslint-prettier-config/actions/workflows/tests.yml/badge.svg)](https://github.com/plaited/eslint-prettier-config/actions/workflows/tests.yml)
+
 An opinionated Eslint config used for Plaited repositories.
 
 ## Installation
