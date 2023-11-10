@@ -22,10 +22,6 @@ jobs:
           fi
       - name: Checkout repository
         uses: actions/checkout@v4
-      - name: Setup bun
-        uses: oven-sh/setup-bun@v1
-      - name: Setup
-        run: bun install
 
       - name: Version
         run: |
