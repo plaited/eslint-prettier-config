@@ -1,0 +1,37 @@
+### PPRIATE DO NOT DELETE ###
+.env
+
+### NODE ###
+
+.npmrc
+
+# Locks
+package-lock.json
+pnpm-lock.yaml
+
+# Logs
+*.log
+
+# dependency packages
+**/node_modules
+
+# Build  artifacts
+**/dist
+**/.parcel-cache/
+
+# Test  artifacts
+**/coverage
+
+
+## Apple Junk ##
+**/.DS_Store
+
+# Yarn
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+

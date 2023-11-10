@@ -1,0 +1,70 @@
+{
+  "name": "@plaited/eslint-prettier-config",
+  "version": "0.0.0",
+  "license": "ISC",
+  "engines": {
+    "node": ">= v18.15.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plaited/eslint-prettier-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plaited/eslint-prettier-config/issues"
+  },
+  "homepage": "https://github.com/plaited/eslint-prettier-config/tree/main#readme",
+  "type": "commonjs",
+  "main": "./.eslintrc.cjs",
+  "exports": {
+    ".": "./.eslintrc.cjs",
+    "./prettier": "./prettier.config.cjs"
+  },
+  "lint-staged": {
+    "*.(js|cjs|tsx|ts)": [
+      "bun run lint:fix",
+      "bun run prettier"
+    ],
+    "package.json": [
+      "format-package -w"
+    ]
+  },
+  "keywords": [
+    "plaited",
+    "eslint preset"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "files": [
+    "./.eslintrc.cjs",
+    "./prettier.config.cjs",
+    "./package.json"
+  ],
+  "scripts": {
+    "lint": "eslint . --ext .ts,.tsx,.js,.cjs",
+    "lint:fix": "bun run lint --fix --quiet",
+    "prettier": "prettier . --write"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.53.0",
+    "prettier": ">=3.0.3"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "6.10.0",
+    "@typescript-eslint/parser": "6.10.0",
+    "eslint-plugin-compat": "4.2.0",
+    "eslint-config-prettier": "9.0.0",
+    "eslint-plugin-react": "7.33.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "18.4.0",
+    "@commitlint/config-conventional": "18.4.0",
+    "bun-types": "1.0.11",
+    "eslint": "8.53.0",
+    "cz-conventional-changelog": "3.3.0",
+    "format-package": "7.0.0",
+    "husky": "8.0.3",
+    "lint-staged": "15.0.2",
+    "prettier": "3.0.3"
+  }
+}
