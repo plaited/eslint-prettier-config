@@ -1,6 +1,6 @@
 {
   "name": "@plaited/eslint-prettier-config",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "ISC",
   "engines": {
     "node": ">= v18.15.0"
