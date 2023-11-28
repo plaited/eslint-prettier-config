@@ -4,4 +4,5 @@ module.exports = {
   jsxSingleQuote: true,
   printWidth: 120,
   singleAttributePerLine: true,
+  experimentalTernaries: true,
 }
